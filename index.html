@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+<title>Prepare to be amazed</title>
+
+<link href="Data landscape week 2 style.css" rel="stylesheet" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"> 
+</script>
+
+</head>
+
+<body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84082917-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<h1 class="info">Book sales and perferred format in Sweden</h1>
+
+<p id="intro"> Everything is digital nowadays, but how about books? For example, there is the Kindle that is popular in the U.S. 
+<br> However, what is the  situation in Sweden? Do people perfer digital to physical?</p>
+<br>
+<br>
+<br>
+<br>
+
+<h2> Graph 1 - Where do you think most people buy books?</h2>
+<canvas id="firstChart" height="100 px"> </canvas>
+<br>
+<br>
+<br>
+<br>
+
+<h2> Graph 2 - What format are these books?</h2>
+<canvas id="secondChart" height="100 px"> </canvas>
+<br>
+<br>
+<br>
+<br>
+
+<h2> Graph 3 - Where people bought books 2014 </h2>
+<canvas id="thirdChart" height="100 px"> </canvas>
+<br>
+<br>
+<br>
+<br>
+
+<h2> Graph 4 - What format people bought 2014</h2>
+<canvas id="fourthChart" height="100 px"> </canvas>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+Chart.defaults.global.defaultFontSize=17;  
+var ctx = document.getElementById("firstChart");
+var firstChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["Digital bookstores", "Physical bookstores", "Other"],
+        datasets: [{
+            label: '# books books books',
+            data: [17, 9, 1],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(204, 153, 0, 0.2)' 
+
+                
+                
+            ],
+            borderColor: [
+               'rgba(255, 99, 132, 1)',
+               'rgba(54, 162, 235, 1)',
+               'rgba(204, 153, 0, 1)'
+            ],
+            borderWidth: 3
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+</script>
+
+<script>
+Chart.defaults.global.defaultFontSize=17;  
+var ctx = document.getElementById("secondChart");
+var secondChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["Physical textbooks", "Digital textbooks", "Digital audiobooks"],
+        datasets: [{
+            label: '# books books books',
+            data: [18, 6, 3],
+            backgroundColor: [
+                'rgba(255, 51, 204, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                
+            ],
+
+            borderColor: [
+                'rgba(255, 51, 204, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+             
+            ],
+            borderWidth: 3
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+Chart.defaults.global.defaultFontSize=17;  
+var ctx = document.getElementById("thirdChart");
+var thirdChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["Physical bookstores", "Digital bookstores", "Miscellaneous retailers"],
+        datasets: [{
+            label: '# books books books',
+            data: [1308083, 1555864, 375275,],
+            backgroundColor: [
+                'rgba(255, 102, 0, 0.2)',
+                'rgba(102, 0, 102, 0.2)',
+                'rgba(153, 51, 0, 0.2)',
+                
+                
+            ],
+            borderColor: [
+                'rgba(255, 102, 0, 1)',
+                'rgba(102, 0, 102, 1)',
+                'rgba(153, 51, 0, 1)',
+             
+            ],
+            borderWidth: 3
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+Chart.defaults.global.defaultFontSize=17;  
+var ctx = document.getElementById("fourthChart");
+var fourthChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["Physical text books", "Physical audiobooks", "Digital textbooks", "Digital audiobooks"],
+        datasets: [{
+            label: '# books books books',
+            data: [2609399, 63473, 12333, 4711],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(204, 153, 0, 0.2)',
+                'rgba(255, 51, 204, 0.2)',
+
+                
+                
+            ],
+            borderColor: [
+               'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(204, 153, 0, 1)',
+                'rgba(255, 51, 204, 1)',
+             
+            ],
+            borderWidth: 3
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+</script>
+<h2 id="thank-you" align="center"> Thank you! :) </h2>
+<iframe id="snoopy" src="https://media.giphy.com/media/xT9DPzhNGA8MKjxwFG/giphy.gif" height="410" width="510" frameBorder="0">
+</iframe>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>

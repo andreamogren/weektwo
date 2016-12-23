@@ -1,0 +1,62 @@
+body {
+	background-image: url(http://cdn.wallpapersafari.com/33/30/6KlIRG.jpg);
+	background-size: cover;
+	font-family: Garamond; 
+	color: white;
+}
+h1 {
+	margin: auto;
+	color: black;
+	font-size: 50px;
+	background-color: white;
+	width: 950px;
+	height: 50px;
+	padding: 10px;  
+}
+
+h2{
+	font-size: 42px;
+	color: white;
+	text-shadow:
+	-1px -1px 0 #000,  
+ 	1px -1px 0 #000,
+ 	-1px 1px 0 #000,
+ 	1px 1px 0 #000;
+}
+
+#intro {
+	margin: auto;
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	width: 320px;
+	height: 100px;
+	padding: 40px;
+}
+
+#firstChart{
+	background-color: #d9b38c;
+}
+
+#secondChart{
+	background-color: #d9b38c;
+
+}
+
+#thirdChart{
+	background-color: #d9b38c;
+
+}
+
+#fourthChart{
+	background-color: #d9b38c;
+}
+
+#snoopy{
+    display:block;
+    margin: 0 auto;
+}
+
+#thank-you{
+	font-size: 50px;
+}
